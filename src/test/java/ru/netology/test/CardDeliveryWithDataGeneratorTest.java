@@ -24,7 +24,7 @@ class CardDeliveryWithDataGeneratorTest {
         $("[data-test-id='city']  input").setValue(DataGenerator.generateCity());
         $("[data-test-id='date']  input").doubleClick().sendKeys(Keys.BACK_SPACE);
 
-        String planMeetingDate = DataGenerator.generateDate(5);
+        String planMeetingDate = DataGenerator.generateDate(4);
 
         $("[data-test-id='date']  input").setValue(planMeetingDate);
         $("[data-test-id='name']  input").setValue(DataGenerator.generateName());
